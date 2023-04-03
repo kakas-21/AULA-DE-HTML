@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula form</title>
+</head>
+<body>
+    <header>
+    <h1>Lugares Para Viajar</h1>
+    <hr>
+    <br>
+    </header>
+    <main>
+    <form action="#">
+        <label for="nome">Nome:</label>
+        <input type="text" required="required" id="nome">
+
+        <label for="sNome">Sobrenome:</label>
+        <input type="text" required="required" id="sNome">
+
+        <br><br>
+
+<label for="email">E-mail:</label>
+<input type="email" id="email" required="required" size="58" placeholder="exemplo.email@gmail.com" />
+<br>
+<br>
+<hr>
+
+<h2>Destino de Viagem:</h2>
+
+<input type="radio" name="reg" id="dn">
+<label for="dn">Destino Nacional</label>
+
+<br>
+
+<input type="radio" name="reg" id="di">
+<label for="di">Destino Internacional</label>
+<hr>
+
+<h2>Locais das Primeiras Viagens</h2>
+<input type="checkbox" name="op1" id="op1">
+<label for="op1">Arraial do Cabo</label>
+
+<br>
+
+<input type="checkbox" name="op2" id="op2">
+<label for="op2">Bahamas</label>
+
+<br>
+
+<input type="checkbox" name="op3" id="op3">
+<label for="op3">Londres</label>
+
+<br>
+
+<input type="checkbox" name="op4" id="op4">
+<label for="op4">L.A</label>
+<hr>
+<br>
+
+<h2>Forma de Pagamento</h2>
+<select name="fPagamento" id="fPagamento">
+    <option value="fp0" disabled selected >Selecione uma Opção</option>
+<option value="fp1">Cartão de Crédito</option>
+<option value="fp2">Cartão de Débito</option>
+<option value="fp3">Pix</option>
+<option value="fp4">Cheque</option>
+<option value="fp5">Boleto</option>
+</select>
+<hr>
+<Br>
+
+<h2>Sua Cidade</h2>   
+<label for="Auto Complete da cidade"></label> 
+<input list="cidade" name="" id="autocomplete" placeholder="destino"/>
+<datalist id="cidade">
+    <option value="São Paulo"></option> 
+ <option value="Campinas"></option> 
+ <option value="Santos"></option> 
+ <option value="Santo André"></option> 
+ <option value="Osasco"></option> 
+</datalist>
+
+
+
+<br>
+<br>
+<input type="submit" value="Enviar">
+    </form>
+    </main>
+</body>
+</html>
